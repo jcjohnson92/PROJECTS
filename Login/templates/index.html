@@ -1,0 +1,18 @@
+{% extends "layouts.html" %}
+
+{% block body%}
+
+    <form method="post" action="/account">
+        <h1>Login</h1>
+        {{ invalid }}
+        {{ success }}
+        <div><h5>Username</h5><input type="text" name="username" value="" placeholder="Username" autocomplete autofocus="off" id="" ></div>
+        <div><h5>Password</h5><input type="text" name="password" value="" placeholder="Password" id=""></div>
+        <input type="submit" value="LOGIN" name="submit">
+    </form>
+    <form action="/create" method="post" >
+        <input type="submit" value="Create Account">
+    </form>
+
+
+{% endblock %}

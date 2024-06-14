@@ -1,0 +1,20 @@
+{% extends "layouts.html" %}
+
+{% block body%}
+
+<form action="/create_account" method="post">
+    <h1>Create Account</h1>
+    {{ already_created }}
+    {{ invalid }}
+    {{ no_info }}
+    {{ matches }}
+
+    <h5>Username</h5>
+    <input type="text" name="username" placeholder="Username" autocomplete autofocus="off" id="" >
+    <h5>password</h5>
+    <input type="text" name="password" placeholder="Password" autocomplete autofocus="off" id="" >
+    <h5>Confirm Password</h5>
+    <input type="text" name="check_password" placeholder="Renter Password" autocomplete autofocus="off" id="" >
+    <input type="submit" value="Submit">
+</form>
+{% endblock %}
